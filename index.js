@@ -26,7 +26,29 @@ const animals = [
  * getTotalCount(animals); //> 28
  * getTotalCount([]); //> 0 // returns 0 if the input array is empty
  */
-function getTotalCount(animals) {}
+function getTotalCount(animals) {
+if (animals.length === 0) {
+  return [];
+}
+let count = 0;
+let total = 0;
+for (let i = 0; i < animals.length; i++) {
+  let animal = animals[i];
+  total = total + animal.count;
+}
+ count = total
+ return count
+}
+
+  
+//getTotalCount(allAnimals)
+console.log(getTotalCount(animals)); 
+ 
+ 
+
+// add all animals in array[animals]
+//return total 
+
 
 /**
  * FUNCTION DESCRIPTION
@@ -40,7 +62,17 @@ function getTotalCount(animals) {}
  * getAllKinds(animals); //> ["Pig", "Cow", "Chicken", "Horse", "Dog", "Cat"]
  * getAllKinds([]); //> [] // returns empty array if input array is empty
  */
-function getAllKinds(animals) {}
+function getAllKinds(animals) {
+  let allKind = [];
+  for (let i =0; i = animals.length; i++) {
+    let animal = animals[i];
+    //let animalKind = animal.kind;
+    //if (i === animal.kind - 1) {
+      allKind.push(animal.kind);
+  
+    }
+    return allKind;
+  }
 
 /**
  * FUNCTION DESCRIPTION
