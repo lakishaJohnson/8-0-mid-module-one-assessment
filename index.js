@@ -123,21 +123,6 @@ for (let i = 0; i < animals.length; i++) {
 }
 return mostCommon
 }
-
-
-  
-  
-
-
-
-
-
-
-
-  
-
-
-
 // Do not change anything below this line.
 module.exports = {
   getTotalCount,
